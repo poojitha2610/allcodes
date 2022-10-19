@@ -1,0 +1,13 @@
+package com.example.registration.UserController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.example.registration.service.UserService;
+
+@Controller
+public class UserController {
+@Autowired
+UserService userservice;
+
+}

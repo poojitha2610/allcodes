@@ -1,0 +1,6 @@
+package com.testhiber.HibernateCrud;
+
+public interface Employeedao
+{
+public static void 
+}

@@ -1,0 +1,40 @@
+package com.example.registration.UserController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.registration.service.UserService;
+import com.example.registration.service.dto.UserRegistrationdto;
+
+@Controller
+@RequestMapping("/registration")
+public class UserController {
+@Autowired
+UserService userservice;
+
+public UserController(UserService userservice) {
+	super();
+	this.userservice = userservice;
+}
+@GetMapping
+public String  ShowHomepage() {
+	return "registration";
+	
+}
+@ModelAttribute("user")
+public UserRegistrationdto registrationdto() {
+	return new UserRegistrationdto();
+	
+}
+@PostMapping
+public String registerUserAccount(@ModelAttribute("user") UserRegistrationdto registrationDto) {
+	userservice.save(registrationDto);
+	return "redirect:/registration?success";
+}
+}
+
+

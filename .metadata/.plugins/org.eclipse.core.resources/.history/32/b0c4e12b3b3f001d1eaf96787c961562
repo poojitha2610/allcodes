@@ -1,0 +1,25 @@
+package com.java.testemployee;
+
+public class Employeeservice implements Employeedao  {
+
+	public void displayEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void addEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void updateEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void deEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

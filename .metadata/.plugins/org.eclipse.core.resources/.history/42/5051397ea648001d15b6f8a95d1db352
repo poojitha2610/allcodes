@@ -1,0 +1,30 @@
+package com.java.testh;
+
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+
+
+public class StudentCrud {
+
+	public static void main(String[] args) {
+
+		Student s=new Student();
+         s.setId(10);
+         s.setName("Navin");
+         s.setMarks(100);
+         Configuration con =new Configuration();
+        con.configure("hibernate.cfg.xml");
+        System.out.println("works");
+       SessionFactory sf=con.buildSessionFactory();
+       Session session=sf.openSession();
+       session.save(s);
+       
+     
+
+	}
+
+}

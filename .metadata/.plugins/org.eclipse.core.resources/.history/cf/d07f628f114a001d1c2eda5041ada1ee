@@ -1,0 +1,27 @@
+package com.testhiber.HibernateCrud;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.getsession.GetSession;
+
+
+public class EmployeeProvider implements Employeedao {
+
+	public void addEmpployee() {
+		SessionFactory factory=GetSession.getSessionFactory();
+		Session ses=GetSession.getSession();
+		try(factory;ses){
+			
+		}
+	}
+
+	public void displayEmployee() {
+		
+	}
+
+	public void deleteEmployee() {
+	
+	}
+
+}

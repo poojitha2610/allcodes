@@ -1,0 +1,14 @@
+package com.test.getconnectionfactory;
+
+import java.sql.Connection;
+
+public class sessionFactory {
+	public static Connection getConnection() {
+		try {
+			Class.forName(null)
+		}
+		return null;
+		
+	}
+}
+

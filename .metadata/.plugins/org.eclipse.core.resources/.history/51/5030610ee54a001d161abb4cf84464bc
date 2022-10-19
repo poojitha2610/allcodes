@@ -1,0 +1,11 @@
+package com.example.demo.Tester;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.Repo.MyRepo;
+
+@Service
+public class StudentService {
+MyRepo myRepo;
+public List<>
+}

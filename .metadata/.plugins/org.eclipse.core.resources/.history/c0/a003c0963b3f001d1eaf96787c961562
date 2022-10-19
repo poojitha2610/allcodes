@@ -1,0 +1,49 @@
+package com.java.testemployee;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+public class Employeeservice implements Employeedao  {
+
+	public void displayEmployee(Employee employee) {
+		ArrayList<Employee>arrayList=new ArrayList<Employee>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/pig", "root", "root");
+			Statement statement=connection.createStatement();
+			ResultSet  set=statement.executeQuery("SELECT * FROM pig.employ");
+			while(set.next()) {
+				Employee emp=new Employee();
+				emp.setName(set.getString(2));
+				emp.setPassword(set.getString(3));
+				arrayList.add(emp);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void addEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void updateEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void deEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void addEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

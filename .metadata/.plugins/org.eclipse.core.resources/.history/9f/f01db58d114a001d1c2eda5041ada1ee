@@ -1,0 +1,39 @@
+package com.testModel;
+
+public class Employee {
+private int  e_id;
+private String e_name;
+private float e_sal;
+
+public int getE_id() {
+	return e_id;
+}
+
+public void setE_id(int e_id) {
+	this.e_id = e_id;
+}
+
+public String getE_name() {
+	return e_name;
+}
+
+public void setE_name(String e_name) {
+	this.e_name = e_name;
+}
+
+public float getE_sal() {
+	return e_sal;
+}
+
+public void setE_sal(float e_sal) {
+	this.e_sal = e_sal;
+}
+
+public Employee(int e_id, String e_name, float e_sal) {
+	super();
+	this.e_id = e_id;
+	this.e_name = e_name;
+	this.e_sal = e_sal;
+}
+
+}

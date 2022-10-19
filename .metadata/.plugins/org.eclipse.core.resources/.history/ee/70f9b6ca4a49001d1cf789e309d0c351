@@ -1,0 +1,38 @@
+package com.java.testh;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Student1")
+public class Student 
+{
+
+  int id;
+  String name;
+  int marks;
+  @Id
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+@Column(name="name")
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+@Column(name="marks")
+public int getMarks() {
+	return marks;
+}
+public void setMarks(int marks) {
+	this.marks = marks;
+}
+  
+}

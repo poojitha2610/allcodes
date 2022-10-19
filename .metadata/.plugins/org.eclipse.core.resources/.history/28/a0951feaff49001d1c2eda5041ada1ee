@@ -1,0 +1,14 @@
+package com.getsession;
+
+
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class GetSession {
+SessionFactory factory=null;
+public static void getSession() {
+	Configuration configuration=new Configuration();
+	configuration.configure("hiberna")
+}
+}

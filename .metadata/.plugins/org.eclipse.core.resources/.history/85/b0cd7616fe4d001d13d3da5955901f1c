@@ -1,0 +1,5 @@
+package com.test.interfacedao;
+
+public interface Employeedao {
+
+}

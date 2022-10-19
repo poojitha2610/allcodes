@@ -1,0 +1,13 @@
+package com.test.getconnectionfactory;
+
+public class ConnectionFactory {
+	try {
+		Class.forName();
+	}
+	catch(Exception e)
+	{
+		
+	}
+
+}
+

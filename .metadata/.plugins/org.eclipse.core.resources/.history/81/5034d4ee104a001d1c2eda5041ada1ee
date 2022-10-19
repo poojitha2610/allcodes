@@ -1,0 +1,18 @@
+package com.testhiber.HibernateCrud;
+
+public class EmployeeProvider implements Employeedao {
+
+	public void addEmpployee() {
+		
+		
+	}
+
+	public void displayEmployee() {
+		
+	}
+
+	public void deleteEmployee() {
+	
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.java.testemployee;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class EmployeeserviceTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

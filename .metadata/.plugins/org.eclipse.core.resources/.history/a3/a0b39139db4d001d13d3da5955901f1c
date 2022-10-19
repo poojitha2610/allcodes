@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http:www.w3.org/1999/xhtml" xmlns:th="http:www.thymeleaf.org/">
+<head>
+<meta name = "viewport" content= "width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<h3>student  Registration Form</h3>
+<form action="#" th:action="@{/save1}" th:Object="${student}" method="post">
+<div class= "form-group">
+student Id:
+<input type= "text" th:field="*{id}" class= "form-control" placeholder= "Enter Student Id">
+</div>
+<div class= "form-group">
+Student Name
+<input type= "tel" th:field="*{name}" class= "form-control" placeholder= "Enter the Student Name">
+</div>
+<div class= "form-group">
+Student Marks
+<input type= "date" th:field="*{marks}" class= "form-control" placeholder= "Enter the Student Marks">
+</div>
+
+<input class= "btnbtn-danger" type= "submit">
+
+</form>
+</div>
+</body>
+</html>

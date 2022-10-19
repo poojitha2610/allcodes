@@ -1,0 +1,5 @@
+package com.test.getconnectionfactory;
+
+public class ConnectionFactory {
+
+}

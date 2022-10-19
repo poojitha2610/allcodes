@@ -1,0 +1,42 @@
+package com.testhiber.HibernateCrud;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.getsession.GetSession;
+import com.testModel.Employee;
+
+
+public class EmployeeProvider implements Employeedao {
+
+	public void addEmpployee(Employee employee) {
+		SessionFactory factory=GetSession.getSessionFactory();
+		Session ses=GetSession.getSession();
+		try(factory;ses){
+			ses.beginTransaction();
+			
+			ses.save(employee);
+			ses.getTransaction().commit();
+			
+		}
+	}
+
+	public void displayEmployee() 
+	{
+		SessionFactory  factory=GetSession.getSessionFactory();
+		Session ses=GetSession.getSession();
+		try(factory;ses){
+			ses.beginTransaction();
+			
+			//Employee employee=ses.get(Employee.class, );
+			//System.out.println(employee.getE_id() +" "+employee.getE_name()+"  "+employee.getE_sal());
+			ses.getTransaction().commit();
+		}
+		
+	}
+
+	public void deleteEmployee() {
+	
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.getsession;
+
+import java.util.Scanner;
+
+
+
+import com.testModel.Employee;
+import com.testhiber.HibernateCrud.EmployeeProvider;
+
+public class EmployeeController {
+
+	public static void addData() {
+		Scanner sc=new Scanner(System.in);
+		Employee employee=new Employee();
+		System.out.println("enter the employee id:");employee.setE_id(sc.nextInt());
+		System.out.println("enter  the employee name:");employee.setE_name(sc.next());
+		System.out.println("enter the employee salary:");employee.setE_sal(sc.nextFloat());
+		EmployeeProvider employeeProvider=new EmployeeProvider();
+		employeeProvider.addEmpployee(employee);
+	}
+	public static void main(String[] args) {
+		addData();
+
+	}
+
+}

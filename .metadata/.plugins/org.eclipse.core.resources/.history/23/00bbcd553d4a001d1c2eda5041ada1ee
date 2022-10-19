@@ -1,0 +1,8 @@
+package com.example.demo.Model;
+
+import com.example.demo.DemoApplication;
+
+public class Model extends DemoApplication
+{
+
+}

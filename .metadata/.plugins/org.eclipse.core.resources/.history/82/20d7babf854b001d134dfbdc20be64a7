@@ -1,0 +1,21 @@
+package com.example.demo.Tester;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.Model.Student;
+import com.example.demo.Repo.MyRepo;
+
+
+
+@Service
+public class StudentService {
+
+ private MyRepo myRepo;
+public List<Student> displayData(){
+	return myRepo.findAll();
+	
+}
+}

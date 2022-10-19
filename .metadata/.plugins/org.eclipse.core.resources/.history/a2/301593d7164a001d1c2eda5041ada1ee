@@ -1,0 +1,56 @@
+package com.testModel;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class Employee {
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+private int  e_id;
+	@Column(name="name")
+private String e_name;
+	@Column(name="salary")
+private float e_sal;
+
+public int getE_id() {
+	return e_id;
+}
+
+public void setE_id(int e_id) {
+	this.e_id = e_id;
+}
+
+public String getE_name() {
+	return e_name;
+}
+
+public void setE_name(String e_name) {
+	this.e_name = e_name;
+}
+
+public float getE_sal() {
+	return e_sal;
+}
+
+public void setE_sal(float e_sal) {
+	this.e_sal = e_sal;
+}
+
+public Employee(int e_id, String e_name, float e_sal) {
+	super();
+	this.e_id = e_id;
+	this.e_name = e_name;
+	this.e_sal = e_sal;
+}
+
+public Employee() {
+	// TODO Auto-generated constructor stub
+}
+
+}

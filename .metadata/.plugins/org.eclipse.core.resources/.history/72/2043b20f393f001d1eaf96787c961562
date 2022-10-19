@@ -1,0 +1,9 @@
+package com.java.testemployee;
+
+public interface Employeedao 
+{
+  public void displayEmployee();
+  public void addEmployee();
+  public void updateEmployee();
+  public void deEmployee()
+}

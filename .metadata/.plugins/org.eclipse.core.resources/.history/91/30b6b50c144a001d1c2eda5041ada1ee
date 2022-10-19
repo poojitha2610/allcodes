@@ -1,0 +1,8 @@
+package com.testhiber.HibernateCrud;
+
+public interface Employeedao
+{
+public  void addEmpployee();
+public void displayEmployee();
+public void deleteEmployee();
+}
